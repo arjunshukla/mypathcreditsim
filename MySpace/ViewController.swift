@@ -25,9 +25,10 @@ class ViewController: UIViewController {
     }
     
 
+    
     @IBAction func simulateButton(_ sender: UIButton) {
         SwiftSpinner.show("Loading")
-        
+        self.view.endEditing(true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) { // change 2 to desired number of seconds
             SwiftSpinner.hide()
             self.performSegue(withIdentifier: "homeToResults", sender: self)
@@ -35,6 +36,11 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func onTap(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+    
     
 }
 
