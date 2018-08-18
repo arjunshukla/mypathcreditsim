@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSpinner (1.5.0)
+
+DEPENDENCIES:
+  - SwiftSpinner
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftSpinner
+
+SPEC CHECKSUMS:
+  SwiftSpinner: 4c058c7a1d6b444dd2e1d70988ead40783097133
+
+PODFILE CHECKSUM: 5d72eca591db3030575bde002dc03058e3403f47
+
+COCOAPODS: 1.5.3
