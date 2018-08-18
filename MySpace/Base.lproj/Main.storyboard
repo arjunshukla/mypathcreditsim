@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6v4-aG-h6Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HUe-Gh-V3j">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -87,23 +87,36 @@
         <!--Results-->
         <scene sceneID="Wt2-mF-0qp">
             <objects>
-                <viewController id="HUe-Gh-V3j" customClass="ResultScreenViewController" sceneMemberID="viewController">
+                <viewController id="HUe-Gh-V3j" customClass="ResultsScreenViewController" customModule="MySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FnB-rh-ggk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GO-h0-VSX">
-                                <rect key="frame" x="189" y="299" width="52" height="21"/>
+                                <rect key="frame" x="277" y="105" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekc-aJ-jbF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="67" y="234" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ekc-aJ-jbF" firstAttribute="centerX" secondItem="FnB-rh-ggk" secondAttribute="centerX" id="XcH-xN-dW9"/>
+                            <constraint firstItem="09v-uE-CU4" firstAttribute="bottom" secondItem="ekc-aJ-jbF" secondAttribute="bottom" constant="193" id="cEw-Sb-EdF"/>
+                            <constraint firstItem="ekc-aJ-jbF" firstAttribute="leading" secondItem="09v-uE-CU4" secondAttribute="leading" constant="67" id="qih-07-Bnt"/>
+                            <constraint firstItem="ekc-aJ-jbF" firstAttribute="top" secondItem="FnB-rh-ggk" secondAttribute="top" constant="234" id="yWf-H4-YjR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="09v-uE-CU4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="q1J-4p-c0u"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="ekc-aJ-jbF" id="ikK-Zw-bbL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tA-mM-5Is" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

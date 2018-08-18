@@ -6,5 +6,7 @@ target 'MySpace' do
   use_frameworks!
 
   # Pods for MySpace
-pod 'SwiftSpinner'
+	pod 'SwiftSpinner'
+	pod 'Charts'
+
 end
