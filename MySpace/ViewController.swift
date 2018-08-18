@@ -9,7 +9,21 @@
 import UIKit
 import SwiftSpinner
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    let spendingRates = ["$100 per month","$200 per month","$300 per month","$400 per month","$500 per month" ]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return(spendingRates.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell1")
+        cell.textLabel?.text = spendingRates[indexPath.row]
+        return(cell)
+        
+    }
+    
 
     @IBOutlet weak var balanceTextKey: UITextField!
     
