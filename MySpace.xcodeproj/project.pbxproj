@@ -13,6 +13,8 @@
 		0D9F93D12128A5A10055AF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F93D02128A5A10055AF7B /* Assets.xcassets */; };
 		0D9F93D42128A5A10055AF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F93D22128A5A10055AF7B /* LaunchScreen.storyboard */; };
 		0D9F93DC2128C2B00055AF7B /* ResultsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */; };
+		54CA11A92129062500ACA120 /* ImproveCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA11A72129062500ACA120 /* ImproveCellVC.swift */; };
+		54CA11AA2129062500ACA120 /* ImproveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA11A82129062500ACA120 /* ImproveVC.swift */; };
 		FB0EE64CB48411DC28D91AD5 /* Pods_MySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795AAFFDBA1D60463704902E /* Pods_MySpace.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		0D9F93D32128A5A10055AF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D9F93D52128A5A10055AF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScreenViewController.swift; sourceTree = "<group>"; };
+		54CA11A72129062500ACA120 /* ImproveCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImproveCellVC.swift; sourceTree = "<group>"; };
+		54CA11A82129062500ACA120 /* ImproveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImproveVC.swift; sourceTree = "<group>"; };
 		71D454415AD4380112CAAB52 /* Pods-MySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.release.xcconfig"; sourceTree = "<group>"; };
 		795AAFFDBA1D60463704902E /* Pods_MySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB122F037DB6D830F22C2BCF /* Pods-MySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		0D9F93C82128A5A00055AF7B /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				54CA11A72129062500ACA120 /* ImproveCellVC.swift */,
+				54CA11A82129062500ACA120 /* ImproveVC.swift */,
 				0D9F93C92128A5A00055AF7B /* AppDelegate.swift */,
 				0D9F93CB2128A5A00055AF7B /* ViewController.swift */,
 				0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */,
@@ -205,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CA11AA2129062500ACA120 /* ImproveVC.swift in Sources */,
 				0D9F93CC2128A5A00055AF7B /* ViewController.swift in Sources */,
+				54CA11A92129062500ACA120 /* ImproveCellVC.swift in Sources */,
 				0D9F93DC2128C2B00055AF7B /* ResultsScreenViewController.swift in Sources */,
 				0D9F93CA2128A5A00055AF7B /* AppDelegate.swift in Sources */,
 			);
