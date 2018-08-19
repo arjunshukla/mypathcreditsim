@@ -2,21 +2,25 @@ PODS:
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
+  - SwiftCharts (0.6.1)
   - SwiftSpinner (1.5.0)
 
 DEPENDENCIES:
   - Charts
+  - SwiftCharts
   - SwiftSpinner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
+    - SwiftCharts
     - SwiftSpinner
 
 SPEC CHECKSUMS:
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  SwiftCharts: 77378d6cf667e95f9c79a745b6778e66eed5339c
   SwiftSpinner: 4c058c7a1d6b444dd2e1d70988ead40783097133
 
-PODFILE CHECKSUM: f290d3c4cb073c6c201e3efc034b9e72bd43d418
+PODFILE CHECKSUM: 9dead0abde67e73ac73efe958da070a662a5b6af
 
 COCOAPODS: 1.5.3

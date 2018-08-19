@@ -26,6 +26,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     @IBOutlet weak var balanceTextKey: UITextField!
+    @IBOutlet weak var creditTextField: UITextField!
+    @IBOutlet weak var payHistorySC: UISegmentedControl!
+    @IBOutlet weak var lineOfCreditSC: UISegmentedControl!
+    @IBOutlet weak var sliderValue: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +44,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
 
+    @IBAction func creditSlider(_ sender: UISlider) {
+        sliderValue.text = String(sender.value.rounded())
+    }
     
     @IBAction func simulateButton(_ sender: UIButton) {
         SwiftSpinner.show("Loading")

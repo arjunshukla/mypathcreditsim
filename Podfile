@@ -8,5 +8,6 @@ target 'MySpace' do
   # Pods for MySpace
 	pod 'SwiftSpinner'
 	pod 'Charts'
+	pod 'SwiftCharts'
 
 end
