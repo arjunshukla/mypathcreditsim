@@ -11,7 +11,9 @@ import UIKit
 import SwiftSpinner
 
 class ImproveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let spendingRates = ["Spending Rate","$100 per month","$200 per month","$300 per month","$400 per month","$500 per month" ]
+    let spendingRates = ["Spending Rate","$100 per month","$200 per month","$300 per month","$400 per month","$500 per month", "$ Balance per month" ]
+    let secondColumn = ["Scoring Impact", "+5", "+10", "+20","+35", "+55", "+80"]
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return spendingRates.count
@@ -23,7 +25,7 @@ class ImproveVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         cell.lblSpendingRate.text = spendingRates[indexPath.row]
         print(spendingRates[indexPath.row])
-        cell.lblScoreImpact.text = "+5"
+        cell.lblScoreImpact.text = secondColumn[indexPath.row]
 
         return(cell)
         
