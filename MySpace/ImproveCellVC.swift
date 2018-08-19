@@ -13,7 +13,9 @@ import SwiftSpinner
 class ImproveCellVC: UITableViewCell {
     
     @IBOutlet weak var lblSpendingRate: UILabel!
-    
     @IBOutlet weak var lblScoreImpact: UILabel!
+    
+    @IBOutlet weak var lblFourthColumn: UILabel!
+    @IBOutlet weak var lblThirdColumn: UILabel!
     
 }

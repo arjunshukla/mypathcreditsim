@@ -9,5 +9,7 @@ target 'MySpace' do
 	pod 'SwiftSpinner'
 	pod 'Charts'
 	pod 'SwiftCharts'
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
 
 end

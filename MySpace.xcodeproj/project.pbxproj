@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9A07DF2129F44600234C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9A07DE2129F44600234C63 /* Assets.xcassets */; };
 		0D9F93CA2128A5A00055AF7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F93C92128A5A00055AF7B /* AppDelegate.swift */; };
 		0D9F93CC2128A5A00055AF7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F93CB2128A5A00055AF7B /* ViewController.swift */; };
 		0D9F93CF2128A5A00055AF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F93CD2128A5A00055AF7B /* Main.storyboard */; };
-		0D9F93D12128A5A10055AF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F93D02128A5A10055AF7B /* Assets.xcassets */; };
 		0D9F93D42128A5A10055AF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9F93D22128A5A10055AF7B /* LaunchScreen.storyboard */; };
 		0D9F93DC2128C2B00055AF7B /* ResultsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */; };
 		54CA11A92129062500ACA120 /* ImproveCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CA11A72129062500ACA120 /* ImproveCellVC.swift */; };
@@ -19,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D9A07DE2129F44600234C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9F93C62128A5A00055AF7B /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9F93C92128A5A00055AF7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9F93CB2128A5A00055AF7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D9F93CE2128A5A00055AF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D9F93D02128A5A10055AF7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9F93D32128A5A10055AF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D9F93D52128A5A10055AF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsScreenViewController.swift; sourceTree = "<group>"; };
@@ -67,13 +67,13 @@
 		0D9F93C82128A5A00055AF7B /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				0D9A07DE2129F44600234C63 /* Assets.xcassets */,
 				54CA11A72129062500ACA120 /* ImproveCellVC.swift */,
 				54CA11A82129062500ACA120 /* ImproveVC.swift */,
 				0D9F93C92128A5A00055AF7B /* AppDelegate.swift */,
 				0D9F93CB2128A5A00055AF7B /* ViewController.swift */,
 				0D9F93DB2128C2B00055AF7B /* ResultsScreenViewController.swift */,
 				0D9F93CD2128A5A00055AF7B /* Main.storyboard */,
-				0D9F93D02128A5A10055AF7B /* Assets.xcassets */,
 				0D9F93D22128A5A10055AF7B /* LaunchScreen.storyboard */,
 				0D9F93D52128A5A10055AF7B /* Info.plist */,
 			);
@@ -158,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D9F93D42128A5A10055AF7B /* LaunchScreen.storyboard in Resources */,
-				0D9F93D12128A5A10055AF7B /* Assets.xcassets in Resources */,
+				0D9A07DF2129F44600234C63 /* Assets.xcassets in Resources */,
 				0D9F93CF2128A5A00055AF7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,15 +173,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MySpace/Pods-MySpace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

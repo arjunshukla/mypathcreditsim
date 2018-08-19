@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="93y-og-YOZ">
-                                <rect key="frame" x="71" y="575" width="883" height="216"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchicon" translatesAutoresizingMaskIntoConstraints="NO" id="93y-og-YOZ">
+                                <rect key="frame" x="63" y="425" width="899" height="516"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchIcon" width="1146" height="284"/>
+        <image name="launchicon" width="1098" height="634"/>
     </resources>
 </document>
